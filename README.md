@@ -1,51 +1,23 @@
-# Data-Science
-Data Science
-# i made some changees
+# Arthematic Methods:
 
-# made changes
-# cloned sucessfully!
-x = "10"
-y = 3
-result = x + str(y)
-print(result)  # Output: "103"
+a = 22
+b = 33
+c = 44
 
-str = "User.Name@Domain.Com"
-print(str.lower())
+def add():
+    print(a + b + c)
+xyz = (a + b + c)
 
-user_ids = [101,102,101,103,102]
-set(user_ids)
-print(set(user_ids))
+print("Addition of xyz is:", xyz)
+print("Subtraction of xyz is:", a - b - c)
+print("Multiplication of xyz is:", a * b * c)
+print("Division of xyz is:", a / b / c)
+print("Modulus of xyz is:", a % b % c)
+print("Floor Division of xyz is:", a // b // c)
+print("Exponentiation of xyz is:", a ** b ** c)
+print("Addition of xyz is:", xyz)
 
-course_data = {
-    "class": "Class4",
-    "details": {
-        "subject": "Python",
-        "level": 1
-    }
-}
-print(course_data)  
-
-user_input = "My_User_Name_123"
-print(user_input.lower())
-
-user_message = "Hey checkout this AWESOME deal to win FREE money now!!"
-
-# 1. Convert the whole message to lowercase, then check for "free"
-if "free" in user_message.lower():
-    print("Spam message detected")
-else:    
-    print("Message Approved")
-
-
-# The list of words you want to block
-blacklist = ["free", "winner", "crypto", "bonus"]
-
-
-user_message = "Congratulations! You are the lucky winner of today's raffle!"
-
-# Check if any blacklisted word is in the message
-is_spam = False
-for word in blacklist:
+# These are the praticing things.
     if word in user_message.lower():
         is_spam = True
         break
