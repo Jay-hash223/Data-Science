@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Batter Bowl makes naturally fermented Indian breakfast batter, delivered fresh in Bengaluru." />
+  <title>Batter Bowl | Fresh breakfast, delivered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Batter Bowl home">
+      <span class="brand-mark" aria-hidden="true">m</span>
+      <span>Batter Bowl</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#shop">Shop menu</a>
+      <a href="#our-process">Our process</a>
+      <a href="#delivery">Delivery</a>
+    </nav>
+    <button class="cart-button" id="cart-button" type="button" aria-label="Open shopping bag">
+      Bag <span id="cart-count">0</span>
+    </button>
+    <button class="admin-button" id="admin-button" type="button">Admin</button>
+    <button class="customer-button" id="customer-button" type="button">Customer login</button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Small-batch · naturally fermented</p>
+        <h1 id="hero-title">Breakfast is<br /><em>ready to rise.</em></h1>
+        <p class="hero-intro">Fresh breakfast batters, made the slow way. A little tangy, wonderfully soft, and delivered to your door.</p>
+        <a class="button button-dark" href="#shop">Find your breakfast <span aria-hidden="true">↘</span></a>
+        <div class="hero-notes" aria-label="Batter Bowl highlights">
+          <span><strong>48h</strong> slow fermented</span>
+          <span><strong>0%</strong> preservatives</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="A bowl of fresh dosa batter with dosa and chutney" role="img">
+        <div class="sun-stamp">Made<br />with time</div>
+        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1100&q=85" alt="South Indian dosa served with chutney" />
+        <div class="art-caption"><span>01</span><span>Fermentation is our secret ingredient.</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Moru qualities">
+      <span>Made in small batches</span><span aria-hidden="true">✦</span><span>Stone-ground grains</span><span aria-hidden="true">✦</span><span>Delivered chilled</span><span aria-hidden="true">✦</span><span>Breakfast, sorted</span>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The good stuff</p>
+          <h2 id="shop-title">Pick your perfect pour.</h2>
+        </div>
+        <p>Choose your batter, make it yours, and keep every pouch refrigerated. Chutneys are delivered fresh in the morning.</p>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="process-section" id="our-process" aria-labelledby="process-title">
+      <div class="process-image">
+        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=85" alt="Traditional Indian breakfast served on a banana leaf" />
+      </div>
+      <div class="process-copy">
+        <p class="eyebrow">The Batter Bowl method</p>
+        <h2>Good batter cannot be hurried.</h2>
+        <p>We soak, stone-grind, and let nature do its work. That unhurried fermentation gives every dosa its lace-like crispness and every idli its cloud-soft middle.</p>
+        <div class="process-list">
+          <div><span>01</span><strong>Soak</strong><p>Carefully selected rice and lentils, soaked separately.</p></div>
+          <div><span>02</span><strong>Grind</strong><p>Slow stone-grinding for a smooth, alive batter.</p></div>
+          <div><span>03</span><strong>Rise</strong><p>Time, warmth, and a little patience. That is it.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery-section" id="delivery" aria-labelledby="delivery-title">
+      <div>
+        <p class="eyebrow">Breakfast, on your schedule</p>
+        <h2 id="delivery-title">Fresh at your door,<br /><em>twice a week.</em></h2>
+      </div>
+      <div class="delivery-details">
+        <p>Manufactured in Guntur Urban. We deliver chilled across Guntur Urban every Wednesday and Saturday morning. Chutneys rotate on random days and remaining varieties are available in morning hours. Delivery distances are estimated from our Guntur Urban kitchen route.</p>
+        <button class="text-button" id="delivery-button" type="button">Check your pin code <span aria-hidden="true">→</span></button>
+        <p class="delivery-message" id="delivery-message" role="status"></p>
+        <p class="pincode-list">Service pincodes: 522001, 522002, 522003, 522004, 522005, 522006, 522007, 522009, 522017, 522034</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">b</span><span>Batter Bowl</span></a>
+    <p>Fermented with care in Bengaluru.</p>
+    <p class="footer-small">© 2026 Batter Bowl</p>
+  </footer>
+
+  <section class="admin-section" id="admin-panel" aria-labelledby="admin-title" hidden>
+    <div class="admin-shell">
+      <div class="admin-intro"><p class="eyebrow">Batter Bowl operations</p><h2 id="admin-title">Order desk.</h2><p>Manage your local demo account and keep an eye on every Guntur Urban delivery.</p><button class="text-button" id="admin-logout" type="button" hidden>Log out <span aria-hidden="true">→</span></button></div>
+      <div class="admin-auth" id="admin-auth">
+        <div class="auth-tabs"><button class="auth-tab active" data-auth="login" type="button">Admin login</button><button class="auth-tab" data-auth="create" type="button">Create admin</button></div>
+        <form id="admin-login-form" class="admin-form"><label>Username<input name="username" required value="Jayaram" /></label><label>Password<input name="password" type="password" required placeholder="Admin password" /></label><button class="button button-dark" type="submit">Sign in <span aria-hidden="true">→</span></button><p class="admin-message" id="login-message" role="status"></p></form>
+      </div>
+      <div class="admin-dashboard" id="admin-dashboard" hidden><div class="dashboard-heading"><div><p class="eyebrow">Signed in as Jayaram</p><h3>Incoming orders</h3></div><span id="order-count-label"></span></div><div class="admin-stats"><div><strong id="login-count-label">0</strong><span>customer logins</span></div><div><strong id="customer-count-label">0</strong><span>registered customers</span></div><div><strong id="subscription-count-label">0</strong><span>active subscriptions</span></div></div><div class="order-table-wrap"><table class="order-table"><thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Route</th><th>Total</th><th>Status</th></tr></thead><tbody id="admin-orders"></tbody></table><p class="empty-orders" id="empty-orders">No orders yet. Customer orders will appear here after checkout.</p></div></div>
+    </div>
+  </section>
+
+  <section class="customer-section" id="customer-panel" aria-labelledby="customer-title" hidden>
+    <div class="customer-shell"><div class="customer-intro"><p class="eyebrow">Breakfast membership</p><h2 id="customer-title">Make it<br /><em>regular.</em></h2><p>Sign in to save your details and schedule daily or personally chosen delivery dates.</p><button class="text-button" id="customer-logout" type="button" hidden>Log out <span aria-hidden="true">→</span></button></div><div class="customer-auth" id="customer-auth"><form id="customer-login-form" class="admin-form"><label>Email or phone number<input name="contact" type="text" required placeholder="you@example.com or 9876543210" /></label><button class="button button-dark" id="send-code-button" type="button">Send code <span aria-hidden="true">→</span></button><label>Verification code<input name="code" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" required placeholder="Enter 4-digit code" /></label><button class="button button-dark" type="submit">Sign in <span aria-hidden="true">→</span></button><p class="admin-message" id="customer-login-message" role="status"></p></form><form id="customer-create-form" class="admin-form"><label>Name<input name="name" required placeholder="Your name" /></label><label>Email or phone number<input name="contact" type="text" required placeholder="you@example.com or 9876543210" /></label><button class="button button-dark" type="submit">Create customer account <span aria-hidden="true">→</span></button><p class="admin-message" id="customer-create-message" role="status"></p></form></div><div class="subscription-panel" id="subscription-panel" hidden><div class="dashboard-heading"><div><p class="eyebrow">Signed in</p><h3>Plan a delivery</h3></div><span id="customer-greeting"></span></div><form id="subscription-form" class="admin-form"><label>What would you like?<select name="item"><option>Idli Batter</option><option>Dosa Batter - Classic</option><option>Dosa Batter - Pesara</option><option>Dosa Batter - Millets</option><option>Garey Batter - Plain</option><option>Garey Batter - Onion and masalas</option><option>Coconut chutney</option><option>Palli chutney</option><option>Bengaluru style chutney</option></select></label><label>Delivery plan<select name="frequency" id="subscription-frequency"><option value="daily">Daily delivery</option><option value="custom">Customizable dates</option></select></label><label id="custom-dates-label" hidden>Choose dates<input name="dates" type="text" placeholder="2026-08-26, 2026-08-29" /><small class="pincode-message">Use YYYY-MM-DD dates separated by commas.</small></label><button class="button button-dark" type="submit">Save subscription <span aria-hidden="true">→</span></button><p class="admin-message" id="subscription-message" role="status"></p></form></div></div>
+  </section>
+
+  <section class="order-section" id="order-status" aria-labelledby="order-title" hidden>
+    <div class="order-card">
+      <div class="order-heading"><p class="eyebrow">Order confirmed</p><h2 id="order-title">Breakfast is<br /><em>on its way.</em></h2><p id="order-summary"></p></div>
+      <div class="tracking-panel"><div class="tracking-top"><span>Tracking code</span><strong id="order-id"></strong></div><div class="tracking-steps" id="tracking-steps"></div></div>
+      <div class="feedback-panel"><p class="eyebrow">After delivery</p><h3>How did we do?</h3><div class="stars" role="group" aria-label="Rate your order"><button type="button" data-rating="1" aria-label="1 star">★</button><button type="button" data-rating="2" aria-label="2 stars">★</button><button type="button" data-rating="3" aria-label="3 stars">★</button><button type="button" data-rating="4" aria-label="4 stars">★</button><button type="button" data-rating="5" aria-label="5 stars">★</button></div><textarea id="feedback" rows="3" placeholder="Tell us about your breakfast (optional)"></textarea><button class="button button-dark" id="feedback-button" type="button">Send feedback <span aria-hidden="true">→</span></button><p class="feedback-message" id="feedback-message" role="status"></p></div>
+    </div>
+  </section>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header"><div><p class="eyebrow">Your breakfast</p><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="close-cart" type="button" aria-label="Close shopping bag">×</button></div>
+      <div class="cart-items" id="cart-items"><p class="empty-cart">Your bag is waiting for something delicious.</p></div>
+      <div class="drawer-footer"><div class="total-row"><span>Subtotal</span><strong id="cart-total">₹0</strong></div><button class="button button-dark checkout-button" id="checkout-button" type="button">Continue to checkout <span aria-hidden="true">→</span></button><p class="secure-note">Chilled delivery is calculated at checkout.</p></div>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+
+  <div class="checkout-modal" id="checkout-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <form class="checkout-form" id="checkout-form">
+      <div class="drawer-header"><div><p class="eyebrow">Almost breakfast</p><h2>Checkout</h2></div><button class="close-button" id="close-checkout" type="button" aria-label="Close checkout">×</button></div>
+      <label>Customer name<input name="name" required autocomplete="name" placeholder="Your name" /></label>
+      <label>Email or phone<input name="contact" required autocomplete="email" placeholder="For order updates" /></label>
+      <label>Delivery address<textarea name="address" required rows="3" placeholder="Flat, street, area, Guntur"></textarea></label>
+      <label>Guntur Urban pincode<input id="pincode" name="pincode" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="Example: 522001" /><small class="pincode-message" id="pincode-message">Delivery is available only in listed Guntur Urban pincodes.</small></label>
+      <label>Payment method<select name="payment"><option>UPI</option><option>Credit / debit card</option><option>Cash on delivery</option></select></label>
+      <div class="fee-row"><span>Items</span><strong id="items-total">₹0</strong></div><div class="fee-row"><span>Delivery (<span id="delivery-distance">0</span> km × ₹5)</span><strong id="delivery-fee">₹0</strong></div><div class="checkout-total"><span>Payable today</span><strong id="checkout-total">₹0</strong></div>
+      <button class="button button-dark" type="submit">Place order securely <span aria-hidden="true">→</span></button>
+      <p class="secure-note">Demo checkout: no real payment is processed.</p>
+    </form>
+  </div>
+</body>
+</html>
